@@ -10,3 +10,4 @@ script:
     - mypy
     - flake8
     - black --check --diff --fast .
+    - xenon --max-absolute A --max-modules A --max-average A .
