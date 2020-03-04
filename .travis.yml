@@ -6,7 +6,7 @@ python:
     - "3.7"
     - "3.8"
 install:
-    - pip install requirements-test.txt
+    - pip install -r requirements-test.txt
 script:
     - mypy
     - flake8
