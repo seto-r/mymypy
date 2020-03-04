@@ -1,7 +1,8 @@
-from typing import List
-from setuptools import setup
-from os import path
 import re
+from os import path
+from typing import List
+
+from setuptools import setup
 
 package_name = "mymypy"
 
