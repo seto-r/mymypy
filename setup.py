@@ -44,7 +44,7 @@ with open("README.md", encoding="utf-8") as f:
 setup(
     name=package_name,
     packages=[package_name],
-    use_scm_version=True,
+    use_scm_version={"local_scheme": lambda _: ""},
     license=license,
     install_requires=_requirements(),
     tests_require=_test_requirements(),
