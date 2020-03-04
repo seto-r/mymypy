@@ -53,6 +53,7 @@ setup(
     url=url,
     description="Run mypy and extract errors from your edited code.",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     keywords=["mypy"],
     entry_points={"console_scripts": ["mymypy=mymypy.__main__:console_entry"]},
     classifiers=[
