@@ -18,7 +18,7 @@ deploy:
       server: https://test.pypi.org/legacy/
       user: seto-r
       password:
-          secure: c0AoBsJoUW22jkLwwt8206VqFYQ1smd4j/5iWB8Ctff8bo/Y+hjd9pEmh+CJKY99nFH+QKMhwNOaguLWMs4xTMgTtdvvIJJFqx8QEPVuCwF20oIgIXs7i04YhluYMqyLUlPrbd/LmdvH9cAJFsK/WJFj+j/JleAdN6B1PimmOqENLm7SvFymJ7BpUAcqv8+cl/F8sC4LlMf9dBRHfj25m0guWB2CAkww6oh6SvLRa/wLOoOaDElmfiGEOTYwF11fnN49QeUSVSkKFq30L9Zv5jH+7YdDd0A6S3Gh362MZ6ATDUx+CtGVHP2YNBYG99S2WD6IGWPRVgMkUX+TrS4mnuIMHhBtt5SXOiPWDMxG5jcf24EIK4Y4YqrPhn9ZEALsbc+tyLCrfLf5+Lcvtn9JTcJu5XcJ7l0rUyIEuf2+tpYH6HhOVTL6ASfWuU6V58dfAPWgAjciRWJVaAuefLoArPI4TRoxN2migWJ8GUDVVrjguXbaBxVD+O6n5SfIGcNXtF8VC1ZcwhSmLs5bTdTPZg5fHGGGHiuNwzBs0453LWZkBCyfpeadbj0K0k8rmCZKIckzcqyHyY0C2M2gScKbURNzwFvSj8sZRZAVqyWM+FqutdFn2SKB0Qqpm0ib4tZHOLdndQJju4ZrIuk2qHisJNczgt36TsqzUffyEGo/VAA=
+          secure: "K+DfjB8A2sIvpJtWWKbzrOBQlNQDcajIOFqw3TMmfdDQOSdUhjldXjtoY0Y3+84EB2vqVtSKF6BgYdpcsFmHDaIy03Idt5ajesFfxU8lcXseHk5iE+wTkmNtIxvb3bFuRTfXajSv3BpMG3GCUVXGC7lD2BaO0fU9xogRXdKqZaK0Ea+JFPv0GweTLhu4m9oK/I0P6x0JP/M5bCLltX/6bf8wAN6suioixWwRhHrFcsu1kq8XXGNM5muyVKQ/WZeVCMItoWH4MAzWjyIz7hJNdb0jx3hKhJ3MXSysalToqtTjmXnwgc57XGpopwkdh+RI6L34iM7AQ5moB4XnwrROWoDKQYYGSwGA9vOaQO7FzJg2JvSVbOHAL4VB8LrycdB+R36YOf1l8LrBSSeSbjjWBdJgjyaoUve6JfAB4uflhg7j1hAqKVjz/ZBKzV5UjASei7C6iyHRkxg6EH0dc3vbd3EO7I/uI479hF5XQfWL3N2lwI1G8K7lPzJ1EtNmhXJe6d+TvciZtFvJpIKL5h9I8WQuMz5yg2QopKVjLLjjc0TjR9Uomz8NKv7r00aEZoeCCu0U+wX7+3NVgv6uVjKQ2PeQ3pnoo8zjbmhnSV+uIG6TKRtPyHh3NRaSsi342S1pkfeKRCTSdgza9En1pvV+Odrdt8+rOmYKadtQNegGoAo="
       on:
           branch: master
           tags: false
