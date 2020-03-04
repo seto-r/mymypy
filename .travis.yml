@@ -7,7 +7,12 @@ python:
     - "3.8"
 install:
     - pip install -r requirements-test.txt
-script:
-    - mypy
-    - flake8
-    - black --check --diff --fast .
+jobs:
+    include:
+        - stage: check mypy
+          script: mypy
+        - stage: check flake8
+          script: flake8
+        - stage: check black
+          if: env(TRAVIS_PYTHON_VERSION) != "3.5"
+          script: black --check --diff --fast .
