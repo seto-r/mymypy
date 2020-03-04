@@ -5,9 +5,21 @@ python:
     - "3.7"
     - "3.8"
 install:
+    - pip install -r requirements.txt
     - pip install -r requirements-test.txt
 script:
     - mypy
     - flake8
     - black --check --diff --fast .
     - xenon --max-absolute A --max-modules A --max-average A .
+deploy:
+    - provider: pypi
+      distributions: sdist
+      server: https://testpypi.python.org/pypi
+      user: seto-r
+      password:
+          secure: c0AoBsJoUW22jkLwwt8206VqFYQ1smd4j/5iWB8Ctff8bo/Y+hjd9pEmh+CJKY99nFH+QKMhwNOaguLWMs4xTMgTtdvvIJJFqx8QEPVuCwF20oIgIXs7i04YhluYMqyLUlPrbd/LmdvH9cAJFsK/WJFj+j/JleAdN6B1PimmOqENLm7SvFymJ7BpUAcqv8+cl/F8sC4LlMf9dBRHfj25m0guWB2CAkww6oh6SvLRa/wLOoOaDElmfiGEOTYwF11fnN49QeUSVSkKFq30L9Zv5jH+7YdDd0A6S3Gh362MZ6ATDUx+CtGVHP2YNBYG99S2WD6IGWPRVgMkUX+TrS4mnuIMHhBtt5SXOiPWDMxG5jcf24EIK4Y4YqrPhn9ZEALsbc+tyLCrfLf5+Lcvtn9JTcJu5XcJ7l0rUyIEuf2+tpYH6HhOVTL6ASfWuU6V58dfAPWgAjciRWJVaAuefLoArPI4TRoxN2migWJ8GUDVVrjguXbaBxVD+O6n5SfIGcNXtF8VC1ZcwhSmLs5bTdTPZg5fHGGGHiuNwzBs0453LWZkBCyfpeadbj0K0k8rmCZKIckzcqyHyY0C2M2gScKbURNzwFvSj8sZRZAVqyWM+FqutdFn2SKB0Qqpm0ib4tZHOLdndQJju4ZrIuk2qHisJNczgt36TsqzUffyEGo/VAA=
+      on:
+          branch: master
+          tags: false
+          condition: $TRAVIS_PYTHON_VERSION = "3.8"
