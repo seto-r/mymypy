@@ -1,2 +1,1 @@
 mypy>=0.761
-setuptools-scm==3.5.0

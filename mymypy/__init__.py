@@ -1,7 +1,15 @@
-from setuptools_scm import get_version
+from importlib.metadata import PackageNotFoundError, version
+
+
+def _get_version() -> str:
+    try:
+        return version(__name__)
+    except PackageNotFoundError:
+        return ""
+
 
 __copyright__ = "Copyright (C) 2018 Ryunosuke Seto"
-__version__ = get_version(root="..", relative_to=__file__, local_scheme=lambda _: "")
+__version__ = _get_version()
 __license__ = "MIT License"
 __author__ = "Seto Ryunosuke"
 __author_email__ = "theshootingstar@hotmail.co.jp"

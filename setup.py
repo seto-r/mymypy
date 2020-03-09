@@ -46,6 +46,7 @@ setup(
     packages=[package_name],
     use_scm_version={"local_scheme": lambda _: ""},
     license=license,
+    setup_requires=['setuptools_scm'],
     install_requires=_requirements(),
     tests_require=_test_requirements(),
     author=author,
